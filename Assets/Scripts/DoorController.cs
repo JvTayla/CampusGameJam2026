@@ -1,9 +1,11 @@
 using UnityEngine;
 
 // Simplest possible door: two separate objects (closed model, open model)
-// occupying the same spot. Opening the door just swaps which one is active.
-// Hook this to a PuzzleBase's "On Puzzle Solved" event, or an Interactable's
-// "On Interact" event if the door itself is what the player clicks/presses E on.
+// occupying the same spot. Opening/closing just swaps which one is active.
+// Hook Toggle() to an Interactable's "On Interact" event if the player should
+// be able to open AND close it themselves (like a switch/lever).
+// Or hook OpenDoor() specifically to a puzzle's "On Puzzle Solved" event
+// if it should only ever open once and stay that way.
 public class DoorController : MonoBehaviour
 {
     [Header("Door States")]
@@ -11,7 +13,9 @@ public class DoorController : MonoBehaviour
     public GameObject openDoor;
 
     [Header("Optional")]
-    public AudioSource openSound; // creaky door hinge, drag a clip in
+    public AudioSource openSound;  // creaky door hinge opening
+    public AudioSource closeSound; // door swinging shut / latching
+
     private bool isOpen = false;
 
     void Start()
@@ -19,6 +23,15 @@ public class DoorController : MonoBehaviour
         // make sure it starts in the correct state regardless of what's
         // active in the editor when you hit Play
         SetDoorState(isOpen);
+    }
+
+    // Call this from an Interactable's "On Interact" event to use it as a switch
+    public void Toggle()
+    {
+        if (isOpen)
+            CloseDoor();
+        else
+            OpenDoor();
     }
 
     // Call this from a puzzle's "On Puzzle Solved" event, or an Interactable
@@ -33,11 +46,16 @@ public class DoorController : MonoBehaviour
             openSound.Play();
     }
 
-    // Optional - in case you ever want a door that can be closed again
+    // Call this directly if you want a dedicated "close" trigger somewhere
     public void CloseDoor()
     {
+        if (!isOpen) return; // already closed, don't re-trigger sound etc
+
         isOpen = false;
         SetDoorState(false);
+
+        if (closeSound != null)
+            closeSound.Play();
     }
 
     void SetDoorState(bool open)
