@@ -3122,6 +3122,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350845569}
   m_CullTransparentMesh: 1
+--- !u!1001 &1387944351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 591935350564962759, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: normalAxisLocal.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 591935350564962759, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: normalAxisLocal.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 591935350564962759, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: normalAxisLocal.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 725713999382307516, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385679003908563709, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824774894658055004, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_Name
+      value: Mirror Puzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125527003810171552, guid: 34a399c41b55e184294951f14605e123, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.06
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a399c41b55e184294951f14605e123, type: 3}
 --- !u!1 &1442209541
 GameObject:
   m_ObjectHideFlags: 0
@@ -4417,3 +4494,4 @@ SceneRoots:
   - {fileID: 506842800}
   - {fileID: 1657007407}
   - {fileID: 1193411690}
+  - {fileID: 1387944351}
