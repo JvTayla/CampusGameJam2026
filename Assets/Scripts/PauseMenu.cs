@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    public MenuMusic menuMusic;
 public GameObject pauseMenu;
 public GameObject settingsMenu;
 
@@ -28,6 +29,8 @@ public void ResumeGame()
 
      Time.timeScale = 1;
      isPaused = false;    
+
+     menuMusic.StopMusic();
     }
 
     public void PauseGame()
@@ -36,6 +39,8 @@ public void ResumeGame()
      settingsMenu.SetActive(false); 
 
      Time.timeScale = 0;
-     isPaused = true;    
+     isPaused = true;
+
+     menuMusic.PlayMusic();
     }
 }
