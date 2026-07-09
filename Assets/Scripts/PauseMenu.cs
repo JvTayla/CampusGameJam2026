@@ -42,5 +42,26 @@ public void ResumeGame()
      isPaused = true;
 
      menuMusic.PlayMusic();
+
+     Cursor.lockState = CursorLockMode.None;
+     Cursor.visible = true;
+    }
+
+    public void OpenSettings()
+    {
+        settingsMenu.SetActive(true);
+        pauseMenu.SetActive(false);
+    }
+
+    public void CloseSettings()
+    {
+        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game Quit");
     }
 }
