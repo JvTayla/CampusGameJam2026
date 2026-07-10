@@ -13,7 +13,7 @@ public class Valve : MonoBehaviour
     [Tooltip("The valve's correct 'facing forward' orientation before any spin is applied. " +
              "Set this in the Inspector by rotating the object in the Scene view until it looks right, " +
              "THEN copy those X/Y/Z values in here.")]
-    public Vector3 baseRotationOffset = new Vector3(0f, 90f, 90f);
+    public Vector3 baseRotationOffset = new Vector3(90f, 0f, 90f);
 
     [Tooltip("Which local axis the valve actually spins on when turned (usually just one of these is 1, rest 0)")]
     public Vector3 spinAxis = new Vector3(1, 0, 0); // defaults to X, change to (0,1,0) or (0,0,1) if needed
