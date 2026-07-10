@@ -877,7 +877,7 @@ RectTransform:
   m_Children:
   - {fileID: 1178599858}
   - {fileID: 1180008082}
-  m_Father: {fileID: 134424768}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2318,9 +2318,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1158107265}
   - {fileID: 1874925597}
-  - {fileID: 2112870359}
   m_Father: {fileID: 315977596}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2368,9 +2366,9 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 945967583}
+  m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1952884875}
-  m_HandleRect: {fileID: 945967582}
+  m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
@@ -2577,7 +2575,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 557581458}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
@@ -2652,7 +2650,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 171997202}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
@@ -3019,10 +3017,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 171997202}
-  - {fileID: 1753257888}
-  m_Father: {fileID: 134424768}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3943,9 +3939,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1087279508}
   - {fileID: 349475914}
-  m_Father: {fileID: 1529468973}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3992,9 +3987,9 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1087279509}
+  m_TargetGraphic: {fileID: 0}
   toggleTransition: 1
-  graphic: {fileID: 1730501028}
+  graphic: {fileID: 0}
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
@@ -4366,7 +4361,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1210285971}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -4503,7 +4498,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1064380086}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4784,6 +4779,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2077307603581746491, guid: 7800865aa9e95cb418a567dffc0244e1, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2627541226969922213, guid: 5cdbd86adb0a94d7eb373b03562e72f4, type: 2}
     - target: {fileID: 3063876312232217618, guid: 7800865aa9e95cb418a567dffc0244e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1286.8672
@@ -5178,6 +5177,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1033749625540738491, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1163146327547542404, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5270,6 +5273,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 553718107}
+    - target: {fileID: 3438884495947034708, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522174728815833868, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099918715620803133, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501609579605837915, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389280204781041971, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761381962017511884, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5584044461692171716, guid: 5cdbd86adb0a94d7eb373b03562e72f4, type: 2}
     - target: {fileID: 5761450388230185325, guid: 4a7a1c048b16ff2438f11c1954ab53eb, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -5842,4 +5869,10 @@ SceneRoots:
   - {fileID: 1015080270}
   - {fileID: 15716097}
   - {fileID: 50700490810524269}
-  - {fileID: 553718108}
+  - {fileID: 315977596}
+  - {fileID: 1391089751}
+  - {fileID: 1409431887}
+  - {fileID: 1495810713}
+  - {fileID: 1802469333}
+  - {fileID: 1953602488}
+  - {fileID: 1972176099}
