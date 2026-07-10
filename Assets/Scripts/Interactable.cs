@@ -29,7 +29,7 @@ public class Interactable : MonoBehaviour
 
     [Header("Proximity Glow")]
     [Tooltip("Distance at which the object starts glowing softly, before the player is even looking at it")]
-    public float glowRange = 5f;
+    public float glowRange = 30f;
     [Tooltip("Outline alpha/intensity when just in range (not looked at)")]
     [Range(0f, 1f)] public float proximityGlowStrength = 0.3f;
     [Tooltip("Outline alpha/intensity when actively looked at")]

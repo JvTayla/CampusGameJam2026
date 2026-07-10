@@ -329,8 +329,14 @@ MonoBehaviour:
   promptText: Turn Valve
   isInteractable: 1
   showOutline: 1
-  outlineMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 2100000, guid: 808116da03d9274489d7ecbabcbee580, type: 2}
   meshSource: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 5
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -360,7 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Valve
   valveID: 1
   baseRotationOffset: {x: 0, y: 90, z: 90}
-  spinAxis: {x: 1, y: 0, z: 0}
+  spinAxis: {x: 90, y: 0, z: 0}
   currentPosition: 0
   tone: {fileID: 0}
 --- !u!1 &847548847291996851
@@ -660,8 +666,14 @@ MonoBehaviour:
   promptText: Turn Valve
   isInteractable: 1
   showOutline: 1
-  outlineMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 2100000, guid: 808116da03d9274489d7ecbabcbee580, type: 2}
   meshSource: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 5
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -691,7 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Valve
   valveID: 2
   baseRotationOffset: {x: 0, y: 90, z: 90}
-  spinAxis: {x: 1, y: 0, z: 0}
+  spinAxis: {x: 90, y: 0, z: 0}
   currentPosition: 0
   tone: {fileID: 0}
 --- !u!1 &1997967814122307883
@@ -1824,8 +1836,14 @@ MonoBehaviour:
   promptText: Turn Valve
   isInteractable: 1
   showOutline: 1
-  outlineMaterial: {fileID: 0}
+  outlineMaterial: {fileID: 2100000, guid: 808116da03d9274489d7ecbabcbee580, type: 2}
   meshSource: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 5
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -1855,7 +1873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Valve
   valveID: 0
   baseRotationOffset: {x: 0, y: 90, z: 90}
-  spinAxis: {x: 1, y: 0, z: 0}
+  spinAxis: {x: 90, y: 0, z: 0}
   currentPosition: 0
   tone: {fileID: 0}
 --- !u!1 &7924762241929296227
