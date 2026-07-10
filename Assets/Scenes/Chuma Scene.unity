@@ -380,6 +380,12 @@ MonoBehaviour:
   showOutline: 1
   outlineMaterial: {fileID: 2100000, guid: 808116da03d9274489d7ecbabcbee580, type: 2}
   meshSource: {fileID: 91005667}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 30
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -2468,6 +2474,12 @@ MonoBehaviour:
   showOutline: 1
   outlineMaterial: {fileID: 2100000, guid: 808116da03d9274489d7ecbabcbee580, type: 2}
   meshSource: {fileID: 506842799}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 30
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -2593,7 +2605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &545010642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3071,6 +3083,12 @@ MonoBehaviour:
   showOutline: 1
   outlineMaterial: {fileID: 0}
   meshSource: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 30
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -5283,6 +5301,12 @@ MonoBehaviour:
   showOutline: 1
   outlineMaterial: {fileID: 2100000, guid: 808116da03d9274489d7ecbabcbee580, type: 2}
   meshSource: {fileID: 1657007406}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 30
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -7251,6 +7275,12 @@ MonoBehaviour:
   showOutline: 1
   outlineMaterial: {fileID: 0}
   meshSource: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  outlineScale: 1.05
+  glowRange: 30
+  proximityGlowStrength: 0.3
+  focusGlowStrength: 1
+  debugLogging: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -7313,3 +7343,4 @@ SceneRoots:
   - {fileID: 1500335315}
   - {fileID: 1015080270}
   - {fileID: 15716097}
+  - {fileID: 553718108}
