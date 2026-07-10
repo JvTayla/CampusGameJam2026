@@ -1,61 +1,64 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-// Put this on an empty GameObject in the mirror room.
-// Assign the mirror (rotating object), the light source point, the target sensor,
-// and a LineRenderer with 3 points for the visible beam.
 public class SignalMirrorPuzzle : PuzzleBase
 {
-    public Transform mirror;
-    public Transform lightSource;
+    [Header("Beam")]
+    public Transform lightSource; // beam fires along lightSource.forward
     public Transform targetSensor;
     public LineRenderer beam;
-    public float rotationSpeed = 50f;
     public float maxBeamDistance = 50f;
+    public float raycastSkin = 0.1f;
+    [Tooltip("Safety cap on bounces, in case mirrors are angled into a loop")]
+    public int maxBounces = 8;
 
-    private bool isFocused = false; // only rotate the mirror while player is actively using it
+    [Header("Audio")]
+    public AudioSource lockedSound;
 
     void Update()
     {
-        if (isFocused)
-        {
-            float input = Input.GetAxis("Horizontal"); // A/D or Left/Right arrows
-            mirror.Rotate(Vector3.up, input * rotationSpeed * Time.deltaTime);
-        }
-
-        CastBeam();
+        if (!IsSolved) CastBeam();
     }
 
     void CastBeam()
     {
-        Vector3 dirToMirror = (mirror.position - lightSource.position).normalized;
-        Vector3 reflected = Vector3.Reflect(dirToMirror, mirror.up);
+        List<Vector3> points = new List<Vector3> { lightSource.position };
+        Vector3 origin = lightSource.position;
+        Vector3 direction = lightSource.forward;
+        bool solved = false;
 
-        beam.positionCount = 3;
-        beam.SetPosition(0, lightSource.position);
-        beam.SetPosition(1, mirror.position);
-
-        if (Physics.Raycast(mirror.position, reflected, out RaycastHit hit, maxBeamDistance))
+        for (int bounce = 0; bounce <= maxBounces; bounce++)
         {
-            beam.SetPosition(2, hit.point);
+            if (Physics.Raycast(origin, direction, out RaycastHit hit, maxBeamDistance))
+            {
+                points.Add(hit.point);
 
-            if (!IsSolved && hit.transform == targetSensor)
-                Solve();
+                RotatableMirror mirrorHit = hit.transform.GetComponent<RotatableMirror>();
+                if (mirrorHit != null)
+                {
+                    direction = Vector3.Reflect(direction, mirrorHit.WorldNormal);
+                    origin = hit.point + direction * raycastSkin;
+                    continue; // keep bouncing
+                }
+
+                if (hit.transform == targetSensor) solved = true;
+                break; // hit something solid that isn't a mirror - beam stops
+            }
+            else
+            {
+                points.Add(origin + direction * maxBeamDistance);
+                break;
+            }
         }
-        else
+
+        beam.positionCount = points.Count;
+        for (int i = 0; i < points.Count; i++)
+            beam.SetPosition(i, points[i]);
+
+        if (solved && !IsSolved)
         {
-            beam.SetPosition(2, mirror.position + reflected * maxBeamDistance);
+            if (lockedSound != null) lockedSound.Play();
+            Solve();
         }
-    }
-
-    // Call this from an Interactable's onInteract event to "enter" the mirror control
-    public void EnterFocus()
-    {
-        isFocused = true;
-    }
-
-    // Call this from an Interactable, or bind to Escape key elsewhere, to "exit"
-    public void ExitFocus()
-    {
-        isFocused = false;
     }
 }
