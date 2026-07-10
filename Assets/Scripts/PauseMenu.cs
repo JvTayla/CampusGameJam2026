@@ -31,6 +31,7 @@ public void ResumeGame()
      isPaused = false;    
 
      menuMusic.StopMusic();
+     
     }
 
     public void PauseGame()
