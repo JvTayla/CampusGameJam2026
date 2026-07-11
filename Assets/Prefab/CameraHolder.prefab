@@ -29,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4363227954660501707}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.084, y: 0, z: -0.473}
+  m_LocalRotation: {x: -0, y: 0.99981135, z: -0, w: 0.019423245}
+  m_LocalPosition: {x: 5.364, y: 1.447, z: 5.288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1666411534724790909}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 177.774, z: 0}
 --- !u!20 &651197951228573004
 Camera:
   m_ObjectHideFlags: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCam
   senseX: 400
   senseY: 400
-  orientation: {fileID: 0}
+  orientation: {fileID: 377480559250204941, guid: 2576824d0e90a4c96b6649f0af401b1a, type: 3}
 --- !u!114 &3190299559910584824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,4 +217,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264232ac14f4747ba82c78547cbcb6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveCamera
-  cameraPosition: {fileID: 0}
+  cameraPosition: {fileID: 1277722878134976631, guid: fcd7ae3e464b344a2b676abbe34c0fb2, type: 3}
